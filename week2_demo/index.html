@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Walters" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!-- IN-DOCUMENT STYLING -->
+    <style>
+        /*in here we write in CSS*/
+        /* SELECTING in CSS & Javacript: select specific element(s) on a page 
+            *by ELEMENT type    ex: body, div, p
+            *by ID attribute    ex: #wrapper, #nav, #footer
+            *by Class attribute ex: coming in Week 3:|
+        */
+
+        div {
+            border:1px solid black;
+            padding:10px; /*adds space between content & border of element */
+            margin:5px; /*adds space between element and others */
+        }
+
+        #nav, #footer {
+            background-color: rgb(245, 231, 231);
+
+        }
+    </style>
+</head>
+<body style="background-color:grey">
+
+    <div> <!--this is the wrapper, and it wraps around all content-->
+
+        <!-- HEADER -->
+        <h1>Your Name</h1>
+
+        <!-- NAV -->
+        <div id="nav">
+
+            <!-- EXTERNAL LINK; a link to a page outside of your website -->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a>
+
+            <!-- INTERNAL LINK: a link to a page inside your website/root folder-->
+            <!-- RELAVTIVE PATH -->
+            <a href="page2.html">Page 2</a>
+
+            <!-- IN PAGE JUMP LINK: a link to another section within the current page -->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of page</a>
+
+        </div><!--/#nav-->
+
+        <!-- BIO -->
+        <div id="bio">
+            <h2>About Me</h2>
+
+            <p>
+                Can a man still be <b>brave</b> if he’s afraid? That is the <i>only time</i> a man can be brave.A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, Unbent, Unbroken. It's <b><u>ten thousand miles</u></b> between Kings landing and the wall. It's ten thousand miles between Kings landing and the wall.
+            </p>
+
+            <!-- RMOTE image links (absoluet paths)  -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Logan_Rock_Treen_closeup.jpg/1200px-Logan_Rock_Treen_closeup.jpg" alt="Its a Rock" style="width:500px">
+
+            <!-- RELATIVE image link(relative path) resource must be stored in the root folder -->
+            <img src="images/stormsEnd.jpg" alt="Storms End in spring" style="width:500px">
+
+        </div><!--/#bio-->
+
+        <hr>
+
+        <!-- SCHOOLS -->
+        <div id="schools">
+
+            <h2>Schools</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 6</li>
+                <li>School 9</li>
+            </ol>
+
+            <img src="images/meca.jpg" alt="MECA Porteous Building at dusk" style="width:500px">
+
+        </div><!--/#schools-->
+
+        <!-- HOBBIES -->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+            
+            <ul>
+                <li>Thing 1</li>
+                <li>Thing 2</li>
+                <li>Thing 3</li>
+            </ul>
+
+        </div><!--/#hobbies-->
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <a href="#nav">Back to the top</a>
+            <br>
+            <p>&copy; M WALTERS | SE111 | Winter 2023</p>
+            <br>
+            <!-- VALIDATION SCREENSHOT -->
+           <img src="images/indexvalidation.jpg" alt="validation screenshot" style="width:1000px">
+
+        </div><!--/#footer-->
+
+
+    </div>
+
+
+</body>
+</html>
