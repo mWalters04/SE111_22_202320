@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <meta name="author" content="Michael Walters">
+    <meta name="description" content="Week 3 Demo">
+    
+    <style>
+        /* Type in CSS */
+
+
+
+        .fancy-font {
+            /* applies to any element with the 'fancy-font' class */
+
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans'
+        }
+
+        .border{
+            border:1px solid maroon;
+        }
+
+        #nav {
+
+            border:3px solid marron;
+            text-align:center;
+        }
+
+        .pic {
+            width:500px;
+            padding:5px;
+            box-shadow:0 0 8px black;
+            margin-left:200px;
+        }
+    </style>
+    
+    <title>W3 Demo | HOME</title>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <!-- Building a Mainframe: reusable HTML structure for multi pages -->
+
+        <div id="header">
+
+            <h1 class="fancy-font"><em>The Last of Us (HBO)</em></h1>
+
+        </div><!--/ #header-->
+
+        <div id="nav">
+
+            <!-- Relative links: resources that live within the root project directory -->
+            <a href="index.html">| HOME |</a>
+            <a href="about.html">| ABOUT |</a>
+            <a href="people.html">| PEOPLE |</a>
+            <a href="places.html">| PLACES |</a>
+
+            <br>
+
+            <!-- External Link: outside of the website/domain; needs to be an ABSOLUTE path (starts with https) -->
+            <a href="https://www.hbo.com/the-last-of-us">| Official HBO Site |</a>
+
+            <!-- In-page jump link: jumps to a section of THIS CURRENT PAGE -->
+            <a href="#footer">| Bottom of Page |</a>
+           
+
+        </div><!--/ #nav-->
+
+        <div id="main-content" class="border">
+
+            <h2 class="fancy-text">content area for the <b>HOME</b> page.</h2>
+
+            <img src="images/showPoster.jpg" alt="Last of Us poster" class="pic">
+
+            <img src="images/the-last-of-us.webp" alt="ellie & Joel in episode ? of The Last of Us" class="pic">
+
+        </div><!--/ #main-content-->
+
+        <div id="footer">
+
+            <p>&copy; M.Walters | SE111.22 | Winter 2023</p>
+
+            <br>
+            <a href="index.html#header">Go to Home page header</a>
+
+        </div><!--/ #footer-->
+
+
+    </div><!--/# wrapper-->
+
+
+</body>
+</html>
