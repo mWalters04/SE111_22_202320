@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Author" content="M Walters">
+    <meta name="Description" content="Week 5 Demo">
+
+
+    <title>W5 Demo | Tables & Forms</title>
+</head>
+<body>
+
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form w/o Table</h2>
+
+    <form method="" action="">
+        <!-- Labes are used to match with input elements
+        
+        for attribute value of <label> MATCHES name attribute
+            and id attribute of <input>
+        
+        -->
+
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required>
+
+        <br>
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required>
+
+        <br>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" maxlength="5" required>
+
+        <br>
+        <!-- Submit Buttom -->
+        <input type="submit" value="Submit!">
+
+    </form>
+    
+    <hr>
+
+    <h2>Form w/ Table</h2>
+
+    <form>
+        <table> <!--form element holds everything; methond & action applied here-->
+            <tbody>  <!--table body, REQUIRED for tables!-->
+
+                <!-- organize and develop row by row -->
+                <!-- if made well first time, can be used -->
+
+                <!-- NEW ROW: First Name -->
+                <tr>
+                    <!-- LABEL -->
+                    <td>
+                        <label for="first">First Name:</label>
+                        
+                    </td>
+
+                    <!-- INPUT -->
+                    <td>
+                        <input type="text" name="first" id="first">
+
+                    </td>
+                </tr>
+
+                <!-- NEW ROW: Last Name -->
+                <tr>
+                    <td>
+                        <label for="last">Last Name:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="last" id="last">
+                    </td>
+
+                </tr>
+
+                 <!-- NEW ROW: Email -->
+                 <tr>
+                    <td>
+                        <label for="email2">Email:</label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="email2" id="email2" placeholder="example@email.com" style="font-family:monospace">
+                    </td>
+
+                <!-- TEXTBOX <textarea> -->
+                <tr>
+
+                    <!-- LABEL -->
+                    <td>
+                        <label for="comments">Comments:</label>
+                    </td>
+
+                    <!-- INPUT -->
+                    <td>
+                        <textarea name="comments" id="comments" placeholder="Leave your comments here..." style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"></textarea>
+                     </td>
+
+                 </tr>
+
+                 <!-- NON TEXT INPUT -->
+                 <tr>
+
+                    <td>   
+                        <label for="faveColor">Pick Your Favorite Color</label>
+                    </td>
+
+                    <td>
+                        <select name="faveColor">
+
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="pink">Pink</option>
+
+                        </select>
+                    </td>
+
+
+                 </tr>
+                 
+                 <!-- RADIO BUTTON: 'multiple choice', USER RESTRICTED TO ONE out of the set when name value matches -->
+                 <tr>
+
+                    <td>
+                        <label for="study">Program of Study:</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="study" value="SE">Software Engineering <br>
+                        <input type="radio" name="study" value="CYB">CyberSecurity <br>
+                        <input type="radio" name="study" value="NE">Networking <br>
+                        <input type="radio" name="study" value="WD">Web Development <br>
+                    </td>
+
+                 </tr>
+
+                 <!-- CHECKBOXES: option for multiple replies from user -->
+                 <tr>
+
+                    <td>
+                        <label for="vehicle">Select Your Vehicle(s)</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">CAR <br>
+                        <input type="checkbox" name="vehicle2" value="roci">Rocinante <br>
+                        <input type="checkbox" name="vehicle3" value="mech">Bumble Bee <br>
+                    </td>
+                 </tr>
+
+                 <!-- DATE/TIME -->
+                 <tr>
+
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+
+                 </tr>
+
+                <!-- NEW ROW: Submit -->
+                <tr>
+
+                    <!-- label -->
+                    <td>
+
+                    </td>
+
+                    <!-- Input -->
+                    <td>
+                        <input type="submit" value="submit!">
+                    </td>
+
+                </tr>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+
+</body>
+</html>
