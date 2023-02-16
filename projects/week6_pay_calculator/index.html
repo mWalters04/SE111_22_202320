@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Michael Walters">
+    <meta name="description" content="JavaScript Pay Calculator">
+
+    <title>Pay Calculator</title>
+</head>
+<body>
+
+    <h1>Pay Calculator</h1>
+
+    
+    <script>
+
+        // Tax Amount
+        var tax = .2
+        // Ask for hourly pay
+        var pay = Number(prompt(`What is your Hourly pay?`))
+        // Ask for Hours Worked
+        var hours = Number(prompt(`How many hours did you work (Include both weeks)`))
+        
+        // Calculations
+        var grossPay = pay * hours
+        var taxTaken = grossPay * tax
+        var netPay = grossPay - taxTaken
+
+        // Display Result
+        alert(`Gross Pay: $${grossPay.toFixed(2)} \nUncle Sam's Share: $${taxTaken.toFixed(2)} \nNet Pay: $${netPay.toFixed(2)}`)
+
+        // Log Results
+        console.log(`Gross Pay is: ${grossPay.toFixed(2)}`)
+        console.log(`Tax Taken out: ${taxTaken.toFixed(2)}`)
+        console.log(`Net Pay is: ${netPay.toFixed(2)}`)
+
+    </script>
+
+    
+</body>
+</html>
