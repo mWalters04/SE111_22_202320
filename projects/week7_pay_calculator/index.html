@@ -103,18 +103,17 @@
 
 
             //convert both hours and rate to Number() data types
-            var hours = Number(document.querySelector(`#hours`))
-            var rate = Number(document.querySelector(`#rate`))
-
+            hours = Number(hours)
+            rate = Number(rate)
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             var tax = .2
-            var gross = hours * rate
-            var taxAmount = gross * tax
-            var net = gross - taxAmount
+            var gross = (hours * rate)
+            var taxAmount = (gross * tax)
+            var net = (gross - taxAmount)
 
             //console.log() all three processed values, rounded to the second decimal place
             console.log(`Gross Amount: `, gross.toFixed(2))
